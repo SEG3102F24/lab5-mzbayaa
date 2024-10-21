@@ -7,4 +7,14 @@ export class Employee {
     public gender?: string,
     public email?: string
   ) {}
+  toPlainObject() {
+    return {
+      name: this.name,
+      dateOfBirth: this.dateOfBirth,
+      city: this.city,
+      salary: this.salary,
+      gender: this.gender,
+      email: this.email,
+    };
+  }
 }
